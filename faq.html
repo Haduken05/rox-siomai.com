@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rox's Siomai Rice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navbar">
+        <a href="faq.html">FAQ</a>
+        <a href="contact us.html">Contact Us</a>
+        <a href="careers.html">Careers</a>
+        <a href="location.html">Location</a>
+        <a href="products.html">Products</a> 
+        <a href="about us.html">About Us</a>
+        <a href="index.html" style="float:left">Home</a>
+    </div>
+    <div class="header">
+        <h2><b>Rox Siomai Rice</b></h2>
+        <div class="scroll"></div>
+    </div>
+    <div class="card1">
+            <center>
+            <h5>FAQ</h5>
+            <h6>1.) What is Siomai Rice?</h6>
+                <p class="p1">
+                    Siomai Rice is a delicious and affordable meal option consisting of steamed siomai served with java rice.
+                </p>
+
+            <h6>2.) How can I place an order?</h6>
+                <p class="p1">
+                    You can place an order for our business by visiting our food stall, located at 1013 C-2 Tondo, or by ordering through this website.
+                </p>
+
+            <h6>3.) What are your opening and closing times?</h6>
+                <p class="p1">
+                    Our opening hours are 9:00 AM, and we close at 4:00 PM  
+                </p>
+
+            <h6>4.) Is your Siomai homemade?</h6>
+                <p class="p1">
+                    No, our siomai is not homemade. We source it from trusted suppliers, cook it fresh, and sell it to our customers
+                </p>
+            
+            <h6>5.) Are there any discounts or promotions available?</h6>
+                <p class="p1">
+                    At this time, we do not have any discounts or promotions available.
+                </p>
+            </center>
+    </div>
+    <div class="footer">
+        <h5>Location: 1013 C-2 Tondo, Manila 1013 Metro Manila</h5>
+        <h5>We would like you to answer this <a href="https://forms.gle/ErAgqqTEPDJG7f8x9" style="color: blue"> Survey </a></h5>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var card1Element = document.querySelector('.scroll');
+
+            card1Element.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rox's Siomai Rice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navbar">
+        <a href="faq.html">FAQ</a>
+        <a href="contact us.html">Contact Us</a>
+        <a href="careers.html">Careers</a>
+        <a href="location.html">Location</a>
+        <a href="products.html">Products</a> 
+        <a href="about us.html">About Us</a>
+        <a href="index.html" style="float:left">Home</a>
+    </div>
+    <div class="header">
+        <h2><b>Rox Siomai Rice</b></h2>
+    </div>
+    <div class="card">
+            <center>
+                <br><br><br><br>
+                <h1>Welcome To Rox Siomai Rice</h1>
+                <p class="p2"> A small food business located near ACLC Northbay</p>
+                <br><br><br><br>
+                <h3>Our Best Products</h3>
+                <br><br>
+                <div class="container">
+                    <div class="flot">
+                        <div class="pic">
+                            <img src="chickensiomai.jpg" alt="Chicken Siomai">
+                            <div class="content">
+                                <a href="products.html"><h4>Chicken Siomai</h4></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="flot">
+                        <div class="pic">
+                            <img src="javarice.jpg" alt="Java Rice">
+                            <div class="content">
+                                <a href="products.html"><h4>Java Rice</h4></a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <br><br><br>
+                <a href="products.html" class="read-more"> View All Products </a>
+            </center>
+            <br><br><br><br>
+    </div>
+    <div class="footer">
+        <h5>Location: 1013 C-2 Tondo, Manila 1013 Metro Manila</h5>
+        <h5>We would like you to answer this <a href="https://forms.gle/ErAgqqTEPDJG7f8x9" style="color: blue"> Survey </a></h5>
+    </div>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+    </script>
+    
+</body>
+
+</html>

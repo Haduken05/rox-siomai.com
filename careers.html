@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rox's Siomai Rice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navbar">
+        <a href="faq.html">FAQ</a>
+        <a href="contact us.html">Contact Us</a>
+        <a href="careers.html">Careers</a>
+        <a href="location.html">Location</a>
+        <a href="products.html">Products</a> 
+        <a href="about us.html">About Us</a>
+        <a href="index.html" style="float:left">Home</a>
+    </div>
+    <div class="header">
+        <h2><b>Rox Siomai Rice</b></h2>
+        <div class="scroll"></div>
+    </div>
+    <div class="card1">
+            <center>
+            <h5>Careers</h5> <br>
+            <p class="p3">Mission</p>
+                <p class="p4">
+                    To provide a delightful dining experience centered around flavorful Siomai Rice.
+                  </p>
+
+            <p class="p3">Vision</p>
+                <p class="p4">
+                    To be the beloved destination for Siomai Rice enthusiasts, known for our flavorful dishes, warm hospitality, and genuine connections with our customers
+                </p>
+            
+            <p class="p3">Values</p>
+                <p class="p4">
+                    At Siomai Rice, our values are simple yet vital. We prioritize 
+                    quality in every aspect, ensuring that each dish we serve reflects our commitment 
+                    to excellence. Our authenticity shines through in every bite. We cherish our customers, striving to bring them joy 
+                    with every meal through attentive service and delicious food. We continuously seek 
+                    improvement, embracing innovation while staying true to our roots. Community is at 
+                    our core, fostering connections and sharing the love of great food. With transparency 
+                    and integrity, we build trust with our customers and uphold our responsibility to the 
+                    planet, making mindful choices for a sustainable future
+                </p>
+            </center>
+    </div>
+    <div class="footer">
+        <h5>Location: 1013 C-2 Tondo, Manila 1013 Metro Manila</h5>
+        <h5>We would like you to answer this <a href="https://forms.gle/ErAgqqTEPDJG7f8x9" style="color: blue"> Survey </a></h5>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var card1Element = document.querySelector('.scroll');
+
+            card1Element.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+    
+</body>
+
+</html>

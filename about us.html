@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rox's Siomai Rice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navbar">
+        <a href="faq.html">FAQ</a>
+        <a href="contact us.html">Contact Us</a>
+        <a href="careers.html">Careers</a>
+        <a href="location.html">Location</a>
+        <a href="products.html">Products</a> 
+        <a href="about us.html">About Us</a>
+        <a href="index.html" style="float:left">Home</a>
+    </div>
+    <div class="header">
+        <h2><b>Rox Siomai Rice</b></h2>
+        <div class="scroll"></div>
+    </div>
+    <div class="card1">
+            <center>
+            <h5>About Us</h5>
+            <h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Welcome to Rox's Siomai Rice, where our love for delicious 
+                and convenient meals meets our dedication to serving our community. 
+                Established in May 2023, Rox's Siomai Rice was born from a desire to 
+                provide flavorful, affordable, and satisfying options for those in search of 
+                a quick and tasty meal solution.</h6>
+
+            <h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                At Rox's Siomai Rice, we understand the fast-paced nature of 
+                modern life, where time is of the essence, and hunger strikes 
+                without warning. That's why we specialize in crafting mouthwatering 
+                siomai rice dishes that not only fill you up but also tantalize your 
+                taste buds with authentic Asian flavors.</h6>
+
+            <h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Our journey began with a simple yet powerful vision: to offer more than 
+                just food; we wanted to create an experience that delights and satisfies. 
+                Each bite of our siomai rice is a testament to our commitment to quality 
+                and authenticity, with every ingredient thoughtfully sourced and every dish 
+                meticulously prepared to ensure a memorable dining experience.</h6>
+
+            <h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                However, our mission extends beyond serving great food. We take pride in 
+                being an integral part of our community, and we're dedicated to giving back 
+                in meaningful ways. Whether it's through supporting local suppliers or actively 
+                participating in community events, we believe in making a positive impact wherever
+                we can.</h6>
+
+            <h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                As we continue to grow and evolve, our core values remain steadfast: integrity, 
+                quality, and a genuine passion for serving others. We invite you to join us on 
+                this culinary journey as we strive to satisfy your cravings, nourish your soul, 
+                and bring a little taste of joy to your day, one siomai rice at a time</h6>
+            </center>
+    </div>
+    <div class="footer">
+        <h5>Location: 1013 C-2 Tondo, Manila 1013 Metro Manila</h5>
+        <h5>We would like you to answer this <a href="https://forms.gle/ErAgqqTEPDJG7f8x9" style="color: blue"> Survey </a></h5>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var card1Element = document.querySelector('.scroll');
+
+            card1Element.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+    
+</body>
+
+</html>

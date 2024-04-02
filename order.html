@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="order-style.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="order">
+        <div class="header">
+            <p class="logo">Order</p>
+            <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+        </div>
+        <div class="container">
+            <div id="root"></div>
+            <div class="sidebar">
+                <div class="head"><p>My Cart</p></div>
+                <div id="cartItem">Your cart is empty</div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">₱ 0.00</h2>
+                </div>
+            </div>
+        </div>
+
+        <form id="order-form" action="#">
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Full Name" id="name" 
+                    class="item" autocomplete="off">
+                    <div class="error-txt">Full Name can't be blank</div>
+                </div>
+                <div class="input-field field">
+                    <input type="email" placeholder="Email Address" id="email" 
+                    class="item" autocomplete="off">
+                    <div class="error-txt email">Email Address can't be blank</div>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="number" inputmode="numeric" placeholder="Phone Number" id="phone" 
+                    class="item" autocomplete="off">
+                    <div class="error-txt">Phone Number can't be blank</div>
+                </div>
+                <div class="input-field field">
+                    <select id="subject">
+                        <option value="Cash on Delivery">Cash on Delivery</option>
+                        <option value="Pick Up">Pick Up</option>
+                    </select>
+                    <div class="error-txt">Subject can't be blank</div>
+                </div>
+            </div>
+                <div class="textarea-field field">
+                    <textarea name="" id="message" cols="30" rows="5" placeholder="Your Complete Address" class="item"
+                     autocomplete="off"></textarea>
+                     <div class="error-txt">Address can't be blank</div>
+                </div>
+                <button type="submit" value="Submit">Send Order</button>
+                <a href="products.html" class="read-more"> Go Back </a>
+        </form>
+    </section>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="order-script.js"></script>
+</body>
+</html>
